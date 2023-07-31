@@ -1,0 +1,307 @@
+*{
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 6rem;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    /* line-height: 5rem; */
+    display: flex;
+}
+
+nav .logo {
+    margin-left: 3rem;
+    font-size: 1.6rem;    
+}
+
+nav .navbar {
+    margin-right: 3rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 4rem;
+    
+}
+
+nav .navbar a{
+    font-size: 1.3rem;
+    color: black;
+    margin-left: 4rem;
+    text-decoration: none;
+    
+}
+
+
+/* main */
+
+.opening {
+    height: 40rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+
+
+.opening .content h1{
+    padding: 4rem;
+    padding-bottom: 0;
+    font-size:4rem;
+    font-weight: bolder;
+    width: 65rem;
+}
+
+.opening .content h3{
+    padding-left: 4rem;
+    padding-top: 0;
+    padding-right: 6rem;
+    font-size:2rem;
+    width: 65rem;
+}
+
+
+.opening .img img {
+    width: 29rem;
+    height: 29rem;
+}
+
+
+.main-container{
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.main-container .left-side .image-slider{
+    position: relative;
+}
+
+.main-container .left-side img{
+    width: 60rem;
+    height: 30rem;
+    border-radius: 1.3rem;
+    border: 2px solid black;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.main-container .left-side p{
+    padding : 2rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    width: 60rem;
+}
+
+.main-container .left-side .testi{
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    padding: 1rem 3rem ;
+    /* background-color: beige; */
+    font-size: 1.5rem;
+}
+
+.main-container .left-side .testi .profile  img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.main-container .left-side .testi .name{
+    margin-left: 2rem;
+}
+
+
+.main-container .left-side .benefit{
+    width: 60rem;
+    padding: 1rem 0rem ;
+    /* background-color: beige; */
+    font-size: 1.5rem;
+}
+
+.main-container .left-side .benefit h5{
+    padding: 2.5rem 0rem;
+}
+
+.main-container .left-side .benefit ol{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.main-container .left-side .benefit li{
+    margin-bottom: 1rem;
+}
+
+
+
+.main-container .right-side {
+    border: 2px solid black;
+    margin-left: 2rem;
+    border-radius: 1.3rem;
+    font-size: 1.3rem;
+    padding: 5rem 4rem;
+    height: fit-content;
+}
+
+
+.main-container .right-side h5{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.main-container .right-side form{
+    margin-top: 3rem;
+}
+
+.main-container .right-side form input{
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    height: 2.5rem;
+    width: 25rem;
+}
+
+.main-container .right-side form select{
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    height: 2.5rem;
+    width: 25rem;
+    font-size: 1.2rem;
+}
+
+.main-container .right-side form button{
+    height: 2.5rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+  
+}
+
+
+
+
+
+
+/* PACKAGE SECTION */
+.package-container {
+    margin: 1rem 4.5rem;
+    height: 7rem;
+    border-bottom: 1px solid black;
+    height: fit-content;
+
+}
+
+
+.package-container .title {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 7rem;
+    /* background-color: beige; */
+     border: 1px solid black;
+     border-radius: 2rem;
+}
+
+.package-container .gallery{
+    display: flex;
+    width: 96.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.package-container .card {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    padding: 6rem 3rem ;
+    /* background-color: gainsboro; */
+    font-size: 1.5rem;
+}
+
+.package-container .card .profile img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.package-container .card .name{
+    margin-left: 3rem;
+}
+
+.package-container .card .name p{
+    font-size: 1.2rem;
+}
+
+/* CTA */
+.cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem;
+}
+
+.cta-container h2{
+    font-size: 3rem;
+    padding: 0rem 6rem;
+}
+
+.cta-container p{
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+.cta-container a{
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
+    color: white;
+    background-color: black;
+    width: 30rem;
+    border-radius: 2rem;
+    text-decoration: none;  
+}
+
+
+
+footer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem;
+    background-color: black;
+    color: white;
+    height: 10rem;
+}
+
+
+footer .container .logo {
+    font-size: 1.6rem;
+    padding: 1rem;   
+}
+
+footer .container p{
+    font-size: 1rem;   
+}
